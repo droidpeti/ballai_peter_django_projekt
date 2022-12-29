@@ -6,7 +6,7 @@
             <div class="date">
                 {{ post.leadott_datum }}
             </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.rendelo}}</a></h1>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.rendelo}} Rendelése</a></h1>
             <p> {{ post.pizza }} </p>
             <p>{{ post.italok|linebreaksbr }}</p>
         </div>
