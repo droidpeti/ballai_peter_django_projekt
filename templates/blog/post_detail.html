@@ -4,11 +4,13 @@
     <div class="post">
         {% if post.leadott_datum %}
             <div class="date">
-                {{ post.leadott_datum }}
+               <p>Rendelésed leadásának dátuma: {{ post.leadott_datum }}</p>
             </div>
         {% endif %}
         <h1> Sikeresen Leadtad a rendelésedet! </h1>
+        {% if user.is_authenticated %}
         <p> Rendelésed Szerkesztése: <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> </p>
+        {%endif%}
         <p>
         <h2> A Rendelésed: </h2>
         {{ post.pizza }}
