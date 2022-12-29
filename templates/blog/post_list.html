@@ -4,10 +4,10 @@
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.leadott_datum }}
+                <p>Leadás Dátuma: {{ post.leadott_datum }}</p>
             </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.rendelo}} Rendelése</a></h1>
-            <p> {{ post.pizza }} </p>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.rendelo }} Rendelése</a></h1>
+            <p>{{ post.pizza}}</p>
             <p>{{ post.italok|linebreaksbr }}</p>
         </div>
     {% endfor %}
