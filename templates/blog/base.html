@@ -10,9 +10,7 @@
     <body>
         <div class="page-header">
             <h1><a href="/">Ballai Péter Pizza rendeléses Weboldala</a></h1>
-            {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
             
         </div>
         <div class="content container">
