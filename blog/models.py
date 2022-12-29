@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    rendelo = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    rendelo = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) 
     pizza = models.CharField(max_length=255, default="Marghareita")
     italok = models.TextField( null=True, max_length=255, default="Coca Cola")
     leadott_datum = models.DateTimeField(
