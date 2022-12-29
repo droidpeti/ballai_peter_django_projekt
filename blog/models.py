@@ -4,6 +4,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
+    rendelo = models.CharField(max_length=50)
     pizza = models.CharField(max_length=255, default="Marghareita")
     italok = models.TextField( null=True, max_length=255, default="Coca Cola")
     leadott_datum = models.DateTimeField(
